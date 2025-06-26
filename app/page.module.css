@@ -166,3 +166,28 @@ a.secondary {
     filter: invert();
   }
 }
+
+.accountInfo {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  max-width: 500px;
+  width: 100%;
+}
+
+.accountInfo h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.accountInfo p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.accountInfo strong {
+  color: #333;
+  margin-right: 0.5rem;
+}

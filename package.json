@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev & local-ssl-proxy --source 3001 --target 3000 --cert dev.kinto.xyz+3.pem --key dev.kinto.xyz+3-key.pem --hostname dev.kinto.xyz",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,9 +11,11 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "next": "15.3.4",
+    "kinto-web-sdk": "^1.0.2"
   },
   "devDependencies": {
+    "local-ssl-proxy": "^2.0.5",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
